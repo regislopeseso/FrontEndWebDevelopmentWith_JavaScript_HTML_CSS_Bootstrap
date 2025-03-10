@@ -1,4 +1,33 @@
+h1,
+h2,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
 h1 {
-  color: red;
-  background-color: blue;
+  color: rgb(80, 16, 16);
+  font-size: 60px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
 }
