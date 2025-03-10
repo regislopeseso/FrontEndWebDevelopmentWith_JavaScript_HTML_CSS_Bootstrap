@@ -1,0 +1,27 @@
+body {
+  border: 3px solid grey;
+}
+.header {
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.first-p {
+  color: rgb(132, 13, 13);
+}
+
+.first-section {
+  text-align: center;
+}
+
+.first-button {
+  color: white;
+  background-color: black;
+}
+
+footer {
+  border-top: 2px solid rgba(128, 128, 128, 0.466);
+}
