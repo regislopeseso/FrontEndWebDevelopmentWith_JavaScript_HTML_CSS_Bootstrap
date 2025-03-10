@@ -51,4 +51,11 @@ li {
 }
 .main-header {
   background-color: #f3ebeb;
+  border-bottom: 3px solid grey;
+}
+.footer {
+  border-top: 3px solid #f3ebeb;
+}
+body {
+  background-color: rgba(255, 166, 0, 0.356);
 }
