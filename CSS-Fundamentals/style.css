@@ -5,37 +5,43 @@ p,
 li {
   font-family: sans-serif;
 }
-
 h1 {
   color: rgb(80, 16, 16);
   font-size: 60px;
   font-style: italic;
 }
-
 h2 {
   font-size: 50px;
   font-weight: 900;
 }
-
 h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
-
 p {
   font-size: 20px;
   line-height: 1.5;
 }
-
 li {
   font-size: 20px;
 }
-
-footer p {
+/* footer p {
   font-size: 10px;
-}
-
-section article p {
+} */
+/* section article p {
   color: red;
+} */
+.test {
+  color: red;
+}
+#copyright {
+  font-size: 15px;
+  font-style: italic;
+}
+.header {
+  color: brown;
+}
+.second-h4 {
+  background-color: black;
 }
