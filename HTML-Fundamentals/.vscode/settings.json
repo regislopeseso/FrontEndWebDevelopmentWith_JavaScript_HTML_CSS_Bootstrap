@@ -1,0 +1,9 @@
+{
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "editor.autoClosingQuotes": "always",
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.fontSize": 12,
+  "editor.lineHeight": 1.25
+}

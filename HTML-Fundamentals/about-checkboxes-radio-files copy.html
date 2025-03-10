@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Form Example</legend>
+        <h3>Contact Information</h3>
+        <div>
+          <section>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter a Name"
+              required
+              name="name"
+            />
+          </section>
+          <br />
+        </div>
+
+        <h3>Native Language</h3>
+        <div>
+          <section>
+            <input type="checkbox" id="en" name="Language" value="English" />
+            <label for="en">English</label>
+          </section>
+          <section>
+            <input type="checkbox" id="de" name="Language" value="German" />
+            <label for="de">German</label>
+          </section>
+          <section>
+            <input type="checkbox" id="fr" name="Language" value="French" />
+            <label for="fr">French</label>
+          </section>
+        </div>
+
+        <h3>Gender</h3>
+        <div>
+          <section>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </section>
+        </div>
+
+        <div>
+          <label for="file">Select File</label>
+          <input type="file" id="file" name="file" />
+        </div>
+        <button>Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
