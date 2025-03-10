@@ -6,19 +6,22 @@ li {
   color: blue;
   font-family: sans-serif;
 }
+h1,
+h2,
+h4 {
+  color: rgb(224, 14, 14);
+}
 h1 {
-  color: rgb(110, 77, 37);
   font-size: 30px;
   font-style: italic;
 }
-/* .first-header {
-  color: blue;
+.first-header {
+  font-size: 30px;
+  font-style: italic;
 }
-.header-class {
-  color: red;
-} */
 h2 {
-  font-size: 50px;
+  color: #1010ac6d;
+  font-size: 25px;
   font-weight: 900;
 }
 h4 {
@@ -46,9 +49,6 @@ li {
   font-size: 15px;
   font-style: italic;
 }
-.header {
-  color: brown;
-}
-.second-h4 {
-  background-color: black;
+.main-header {
+  background-color: #f3ebeb;
 }
