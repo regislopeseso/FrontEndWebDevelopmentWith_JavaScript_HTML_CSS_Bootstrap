@@ -56,15 +56,34 @@ li {
 .footer {
   border-top: 3px solid #f3ebeb;
 }
+/*Children's Pseudo Classes*/
 /* li:first-child {
   color: red;
 }
 li:last-child {
   background-color: aqua;
 } */
-li:nth-child(even) {
+/* li:nth-child(even) {
   color: red;
-}
+} */
 /* section p:first-child {
   color: red;
 } */
+
+/* Hyperlinks Classes*/
+/* the following order is mandatory!!*/
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ab;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+a:active {
+  background-color: black;
+  color: red;
+}
