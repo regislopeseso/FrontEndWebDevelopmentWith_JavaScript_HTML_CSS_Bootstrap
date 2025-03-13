@@ -128,7 +128,8 @@ a:active {
 }
 
 nav a {
-  margin-right: 10px;
+  margin: 20px 10px;
+  display: inline-block;
 }
 .a-wrapper {
   margin: 20px 0;
