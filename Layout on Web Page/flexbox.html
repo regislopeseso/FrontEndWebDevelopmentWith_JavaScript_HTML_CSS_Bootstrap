@@ -8,36 +8,51 @@
       .flex-wrapper {
         background-color: grey;
         margin: 50px;
-        padding: 10px;
+        /* gap: 20px; */
         display: flex;
         align-items: center;
         justify-content: center;
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
       }
+      /* .el {
+        flex: 1;
+      } */
       .el-1 {
         background-color: red;
         height: 100px;
+        /* order: 1; */
+        /* flex-grow: 2;
+        flex-basis: 400px; */
+        flex: 1;
       }
       .el-2 {
         background-color: blue;
+        /* order: 2; */
+        /* flex-grow: 5;
+        width: 500px; */
+        flex: 2;
       }
       .el-3 {
         background-color: greenyellow;
+        /* flex-grow: 1; */
+        /* align-self: flex-start; */
+        flex: 3;
       }
       .el-4 {
         background-color: orange;
-      }
-      .el-5 {
-        background-color: yellow;
+        /* flex-grow: 1; */
+        flex: 4;
       }
     </style>
   </head>
   <body>
     <div class="flex-wrapper">
-      <div class="el-1">HTML</div>
-      <div class="el-2">CSS</div>
-      <div class="el-3">Element</div>
-      <div class="el-4">Language</div>
-      <div class="el-5">Learn</div>
+      <div class="el el-1">HTML</div>
+      <div class="el el-2">CSS</div>
+      <div class="el-3 el">Element</div>
+      <div class="el-4 el">Language</div>
     </div>
   </body>
 </html>
