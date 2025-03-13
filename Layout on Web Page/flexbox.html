@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
+      .main-wrapper {
+        display: flex;
+        border: 1px solid red;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
       .flex-wrapper {
         background-color: grey;
         margin: 50px;
-        /* gap: 20px; */
+        flex-wrap: wrap;
+        gap: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,7 +56,14 @@
       }
     </style>
   </head>
-  <body>
+  <body class="main-wrapper">
+    <div class="flex-wrapper">
+      <div class="el el-1">HTML</div>
+      <div class="el el-2">CSS</div>
+      <div class="el-3 el">Element</div>
+      <div class="el-4 el">Language</div>
+      <div>test</div>
+    </div>
     <div class="flex-wrapper">
       <div class="el el-1">HTML</div>
       <div class="el el-2">CSS</div>
