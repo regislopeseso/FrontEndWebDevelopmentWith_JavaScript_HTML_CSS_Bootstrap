@@ -46,6 +46,9 @@ h4 {
   border-bottom: 3px solid grey;
   padding: 10px;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .first-header {
   text-align: center;
@@ -138,14 +141,23 @@ nav a {
 .a-wrapper {
   margin: 20px 0;
   border: 3px solid black;
+  border-radius: 10px;
   width: 100px;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   /* top: 100px;
   left: 100px;
    */
-  bottom: 0;
-  left: 100px;
+  bottom: 100px;
+  right: 100px;
+  text-align: center;
+  background-color: rgb(151, 146, 146);
+}
+.a-wrapper a {
+  color: white;
+}
+.a-wrapper:hover {
+  box-shadow: 1px 3px 3px -1px;
 }
 img {
   margin: 20px 0;
