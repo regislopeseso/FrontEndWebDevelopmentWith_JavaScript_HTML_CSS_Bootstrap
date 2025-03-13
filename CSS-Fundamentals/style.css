@@ -87,3 +87,15 @@ a:active {
   background-color: black;
   color: red;
 }
+
+.first-a {
+  border: 3px solid red;
+  /* padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px; */
+  padding: 10px 20px 30px 40px;
+  background-color: black;
+  margin: 20px 40px;
+}
+.second-a {
+}
