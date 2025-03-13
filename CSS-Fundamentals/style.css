@@ -8,6 +8,11 @@ body {
   color: black;
   font-family: sans-serif;
 }
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1,
 h2,
