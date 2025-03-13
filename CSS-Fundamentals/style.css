@@ -155,6 +155,28 @@ p {
   margin-top: 20px;
 }
 
+.fixed {
+  border: 3px solid green;
+  background-color: greenyellow;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+.sticky {
+  border: 2px solid red;
+  background-color: orange;
+  position: sticky;
+  top: 100px;
+}
+.sticky-header {
+  border: 1px solid red;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
 /* .first-a {
   border: 3px solid red;
   padding: 20px;
