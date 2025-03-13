@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: black;
   font-family: sans-serif;
@@ -16,13 +21,23 @@ h4 {
   color: rgb(224, 14, 14);
 }
 
+.main-header {
+  background-color: #f3ebeb;
+  border-bottom: 3px solid grey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 .first-header {
+  text-align: center;
   font-size: 30px;
   font-style: italic;
+  margin-bottom: 16px;
 }
+
 h2 {
   font-size: 25px;
   font-weight: 900;
+  margin-bottom: 10px;
 }
 h4 {
   font-size: 20px;
@@ -32,9 +47,15 @@ h4 {
 p {
   font-size: 20px;
   line-height: 1.5;
+  margin-left: 10px;
 }
 li {
   font-size: 20px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+li:first-child {
+  margin-top: 0;
 }
 /* footer p {
   font-size: 10px;
@@ -49,12 +70,14 @@ li {
   font-size: 15px;
   font-style: italic;
 }
-.main-header {
-  background-color: #f3ebeb;
-  border-bottom: 3px solid grey;
-}
 .footer {
   border-top: 3px solid #f3ebeb;
+  padding: 20px;
+  text-align: center;
+}
+.footer p {
+  margin-top: 0;
+  margin-left: 0;
 }
 /*Children's Pseudo Classes*/
 /* li:first-child {
@@ -88,14 +111,29 @@ a:active {
   color: red;
 }
 
-.first-a {
+nav a {
+  margin-right: 10px;
+}
+.a-wrapper {
+  margin: 20px 0;
+}
+img {
+  margin: 20px 0;
+}
+
+p {
+  margin-top: 20px;
+}
+
+/* .first-a {
   border: 3px solid red;
-  /* padding: 20px;
+  padding: 20px;
   padding-top: 40px;
-  padding-bottom: 40px; */
+  padding-bottom: 40px;
   padding: 10px 20px 30px 40px;
   background-color: black;
   margin: 20px 40px;
 }
 .second-a {
-}
+  border: 3px solid red
+} */
