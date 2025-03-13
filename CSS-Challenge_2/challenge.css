@@ -1,7 +1,20 @@
-body {
-  border: 5px solid grey;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top-header {
+  padding: 20px;
+  background-color: bisque;
+  color: black;
+  margin-bottom: 20px;
+}
 .header {
   text-align: center;
 }
@@ -10,8 +23,11 @@ body {
   text-align: center;
 }
 .car-image img {
-  width: 250px;
-  height: 300px;
+  width: 30%;
+  height: auto;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 16px 0;
 }
 .car-image h3 {
   text-transform: uppercase;
@@ -37,6 +53,7 @@ h2 {
 
 .detail-list {
   list-style-type: upper-roman;
+  margin-left: 30px;
 }
 .detail-list li:nth-child(odd) {
   color: purple;
@@ -62,5 +79,8 @@ button:hover {
 footer {
   border-top: 1px solid grey;
   text-align: center;
-  color: rgb(209, 204, 204);
+  color: aliceblue;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: bisque;
 }
