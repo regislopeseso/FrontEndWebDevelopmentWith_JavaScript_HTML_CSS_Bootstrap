@@ -21,7 +21,15 @@
       }
       .el-1 {
         background-color: red;
-        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .el-1 img {
+        width: 50px;
+        height: 60px;
       }
       .el-2 {
         background-color: blue;
@@ -37,9 +45,13 @@
       }
       .el-6 {
         background-color: orangered;
+        grid-column: 1/2;
+        grid-row: 3;
       }
       .el-7 {
         background-color: blueviolet;
+        grid-column: 4;
+        grid-row: 4;
       }
       .el-8 {
         background-color: burlywood;
@@ -52,6 +64,14 @@
   <body>
     <div class="main-wrapper">
       <div class="grid-wrapper">
+        <div class="el el-1">
+          <img src="image-1.png" alt="image" />
+          <section>
+            <h3>test</h3>
+            <p>ksjs</p>
+          </section>
+        </div>
+
         <div class="el el-1">HTML</div>
         <div class="el el-2">CSS</div>
         <div class="el el-3">Element</div>
