@@ -39,17 +39,28 @@ h4 {
 .main-header {
   background-color: #f3ebeb;
   border-bottom: 3px solid grey;
-  padding: 10px;
+  padding: 20px 10px;
   margin-bottom: 20px;
   position: sticky;
   top: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav a {
+  display: inline-block;
+}
+nav {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .first-header {
-  text-align: center;
   font-size: 30px;
   font-style: italic;
-  margin-bottom: 16px;
+  /* flex: 1; */
 }
 
 h2 {
@@ -129,10 +140,6 @@ a:active {
   color: red;
 }
 
-nav a {
-  margin: 20px 10px;
-  display: inline-block;
-}
 .a-wrapper {
   margin: 20px 0;
   border: 3px solid black;
