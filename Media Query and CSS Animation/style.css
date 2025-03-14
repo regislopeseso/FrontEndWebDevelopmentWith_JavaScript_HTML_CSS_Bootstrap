@@ -21,6 +21,30 @@
   justify-content: space-around;
   gap: 10px;
 }
+
+.transform {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 3px 3px 1px;
+  /* transform: matrix(1.2, 0, 0, 1.2, 100, 100); */
+  /* transform: translate(15px, 15px); */
+  /* transform: translateX(50px); */
+  transform: translateY(50px);
+  /* transform: scale(1); */
+  /* transform: rotate(-15deg); */
+}
+
 @media screen and (max-width: 575px) {
   .hamburger {
     display: block;
