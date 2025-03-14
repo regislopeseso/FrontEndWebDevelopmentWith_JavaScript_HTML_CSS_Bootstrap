@@ -87,6 +87,7 @@ span {
 }
 .home-img img {
   width: 35vw;
+  animation: floatImage 3s ease-in-out infinite;
 }
 .social-media a {
   display: inline-flex;
