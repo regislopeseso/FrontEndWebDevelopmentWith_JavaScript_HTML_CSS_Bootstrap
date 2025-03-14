@@ -7,10 +7,14 @@
     <style>
       .grid-wrapper {
         background-color: grey;
-        margin: 10px;
+        margin: 50px;
+        height: 500px;
         display: grid;
-        grid-template-columns: 200px 100px 150px;
-        grid-template-rows: 200px 150px 70px;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: 1fr 1fr auto; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-rows: 1fr 1fr 1fr;
+        /* grid-template-rows: 200px 150px 70px; */
         /* gap: 10px; */
         column-gap: 30px;
         row-gap: 10px;
