@@ -84,6 +84,7 @@ span {
   border-radius: 50%;
   background-color: var(--main-color);
   box-shadow: 0 0 1rem var(--main-color);
+  animation: floatImage 3s ease-in-out infinite;
 }
 .home-img img {
   width: 35vw;
@@ -315,4 +316,16 @@ span {
 .top-icon a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
