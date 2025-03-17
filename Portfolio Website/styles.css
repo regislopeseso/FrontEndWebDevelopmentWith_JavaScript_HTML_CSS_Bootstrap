@@ -283,3 +283,36 @@ span {
 .contact form textarea {
   resize: none;
 }
+.contact form .btn {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 10px;
+  background-color: var(--second-bg-color);
+}
+.footer-text p {
+  font-size: 1.5 rem;
+  transition: all 0.5s;
+}
+.top-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+.top-icon a:hover {
+  box-shadow: 0 0 1 var(--main-color);
+}
+.top-icon a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
