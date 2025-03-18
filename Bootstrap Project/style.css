@@ -33,3 +33,7 @@
 .carousel-item {
   max-height: calc(100vh - 88px);
 }
+
+.bi {
+  font-size: 2rem;
+}
