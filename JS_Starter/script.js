@@ -287,3 +287,31 @@ this is a commented section
 
 // var age = calculateAge(2025, 1992);
 // console.log(age);
+
+//* Quiz
+function subtraction(x, y) {
+  return y - x;
+}
+
+let result = subtraction(18, 97);
+console.log(result);
+
+let isOdd = function (number) {
+  if (number % 2 !== 0) {
+    return true;
+  }
+  return false;
+};
+
+console.log(isOdd(5));
+
+let addition = function (number) {
+  let res = 0;
+  for (var i = 1; i <= number; i++) {
+    res += i;
+  }
+  return res;
+};
+
+let addResult = addition(3);
+console.log(addResult);
