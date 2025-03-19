@@ -38,7 +38,7 @@ this is a commented section
 //job = prompt("the new content should be: ");
 // console.log(job);
 
-//! Basic operators:
+////! Basic operators:
 // let a, b, c;
 
 // //? Add and Dif: +, -
@@ -77,7 +77,7 @@ this is a commented section
 // c = 9;
 // console.log(`a < b || b-? ${a == b}`);
 
-//? Conditional Statements: if, else, else if
+////? Conditional Statements: if, else, else if
 // let grade = prompt("Your grade is: ");
 
 // if (grade < 40) {
@@ -98,7 +98,7 @@ this is a commented section
 //   console.log("You can enter the cafe and buy a drink");
 // }
 
-//? alternatively:
+////? alternatively:
 // if (age < 18) {
 //   console.log("You cannot enter the cafe.");
 // }
@@ -111,7 +111,7 @@ this is a commented section
 //   console.log("You can enter the cafe and buy a drink");
 // }
 
-//! Ternary Operator
+////! Ternary Operator
 // if (grade < 40) {
 //   console.log("You cannot go to the next class.");
 // } else if (grade >= 40 && grade < 45) {
@@ -121,13 +121,13 @@ this is a commented section
 // }
 
 // grade < 45
-//   ? console.log("You cannot go to the next class.")
+////? console.log("You cannot go to the next class.")
 //   : console.log("You can go to next class");
 
 // var result = grade < 45 ? true : false;
 // console.log(result);
 
-//! Switch Statements
+////! Switch Statements
 // var day;
 
 // switch (day) {
@@ -186,7 +186,7 @@ this is a commented section
 //   console.log(`'Sarah has the highest avg. grade: ${nAvg}'`);
 // }
 
-//! Loops
+////! Loops
 
 // //? While
 // let number = 1;
@@ -245,8 +245,8 @@ this is a commented section
 //   break;
 // }
 
-//! Functions
-//? without arguments
+////! Functions
+////? without arguments
 // function sayHello() {
 //   console.log("Hello world");
 //   console.log("goodbye world");
@@ -288,30 +288,53 @@ this is a commented section
 // var age = calculateAge(2025, 1992);
 // console.log(age);
 
-//* Quiz
-function subtraction(x, y) {
-  return y - x;
+// //* Quiz
+// function subtraction(x, y) {
+//   return y - x;
+// }
+
+// let result = subtraction(18, 97);
+// console.log(result);
+
+// let isOdd = function (number) {
+//   if (number % 2 !== 0) {
+//     return true;
+//   }
+//   return false;
+// };
+
+// console.log(isOdd(5));
+
+// let addition = function (number) {
+//   let res = 0;
+//   for (var i = 1; i <= number; i++) {
+//     res += i;
+//   }
+//   return res;
+// };
+
+// let addResult = addition(3);
+// console.log(addResult);
+
+// //! Function Scope
+// function sayName() {
+//   let Name = "Sheldon";
+//   console.log(Name);
+// }
+
+// // Compare
+// sayName();
+// // vs
+// console.log(Name);
+
+function sayHi() {
+  let myWord = "Hi there";
+  console.log(myWord);
+  sayBye();
+
+  function sayBye() {
+    console.log(myWord);
+  }
 }
 
-let result = subtraction(18, 97);
-console.log(result);
-
-let isOdd = function (number) {
-  if (number % 2 !== 0) {
-    return true;
-  }
-  return false;
-};
-
-console.log(isOdd(5));
-
-let addition = function (number) {
-  let res = 0;
-  for (var i = 1; i <= number; i++) {
-    res += i;
-  }
-  return res;
-};
-
-let addResult = addition(3);
-console.log(addResult);
+sayHi();
