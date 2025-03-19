@@ -126,3 +126,24 @@ grade < 45
 
 var result = grade < 45 ? true : false;
 console.log(result);
+
+//! Switch Statements
+var day;
+
+switch (day) {
+  case "saturday":
+    console.log("I like saturday");
+    break;
+
+  case "monday":
+    console.log("I don't like saturday");
+    break;
+
+  case "friday":
+    console.log("I really like saturday");
+    break;
+
+  default:
+    console.log("I don't know the day");
+    break;
+}
