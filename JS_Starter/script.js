@@ -265,17 +265,25 @@ this is a commented section
 
 // sayHelloTo("Regis");
 
-//? return
-function cube(number) {
-  if (number > 999) {
-    return 0;
-  }
-  return number * number * number;
-}
+// //? return
+// function cube(number) {
+//   if (number > 999) {
+//     return 0;
+//   }
+//   return number * number * number;
+// }
 
-console.log(cube(4));
-console.log(cube(9999999999999999));
-//or
+// console.log(cube(4));
+// console.log(cube(9999999999999999));
+// //or
 
-let result = cube(3);
-console.log(result);
+// let result = cube(3);
+// console.log(result);
+
+// //? Function Expression
+// let calculateAge = function (currentYear, birthYear) {
+//   return currentYear - birthYear;
+// };
+
+// var age = calculateAge(2025, 1992);
+// console.log(age);
