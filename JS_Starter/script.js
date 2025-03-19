@@ -230,17 +230,27 @@ this is a commented section
 //   i % 7 === 0 && i % 5 === 0 ? console.log(i) : null;
 // }
 
-//? Break and Continue
-console.log("continue statement");
-for (var i = 1; i <= 10; i++) {
-  if (i % 2 !== 0) continue;
-  console.log(i);
+// //? Break and Continue
+// console.log("continue statement");
+// for (var i = 1; i <= 10; i++) {
+//   if (i % 2 !== 0) continue;
+//   console.log(i);
+// }
+
+// console.log("break statement");
+// for (var i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+//   break;
+// }
+
+//Functions
+function sayHello() {
+  console.log("Hello world");
+  console.log("goodbye world");
 }
 
-console.log("break statement");
-for (var i = 1; i <= 10; i++) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
-  break;
-}
+sayHello();
+sayHello();
+sayHello();
