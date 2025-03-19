@@ -38,10 +38,10 @@ this is a commented section
 //job = prompt("the new content should be: ");
 console.log(job);
 
-// Basic operators:
+//! Basic operators:
 let a, b, c;
 
-//Add and Dif: +, -
+//? Add and Dif: +, -
 a = 2;
 b = 3;
 c = a + b;
@@ -53,13 +53,13 @@ console.log(`c = a - b = ${a} - ${b} = ${c}`);
 c--;
 console.log(`c-- = ${c}`);
 
-//Multiplication and Division: *, /
+//? Multiplication and Division: *, /
 c = a * b;
 console.log(`c = a * b = ${a} * ${b} = ${c}`);
 c = a / b;
 console.log(`c = a / b = ${a} / ${b} = ${c}`);
 
-//Logical operators: >, >=, <, <=
+//? Logical operators: >, >=, <, <=
 c = a > b;
 console.log(`a > b ? ${c}`);
 c = a <= b;
@@ -77,7 +77,7 @@ b = 5;
 c = 9;
 console.log(`a < b || b-? ${a == b}`);
 
-//Conditional Statements: if, else, else if
+//? Conditional Statements: if, else, else if
 let grade = prompt("Your grade is: ");
 
 if (grade < 40) {
@@ -98,7 +98,7 @@ if (age < 18) {
   console.log("You can enter the cafe and buy a drink");
 }
 
-//alternatively:
+//? alternatively:
 // if (age < 18) {
 //   console.log("You cannot enter the cafe.");
 // }
@@ -110,3 +110,19 @@ if (age < 18) {
 // {
 //   console.log("You can enter the cafe and buy a drink");
 // }
+
+//! Ternary Operator
+if (grade < 40) {
+  console.log("You cannot go to the next class.");
+} else if (grade >= 40 && grade < 45) {
+  console.log("You cannot go to the next class but you can enter the exam");
+} else {
+  console.log("You can go to next class");
+}
+
+grade < 45
+  ? console.log("You cannot go to the next class.")
+  : console.log("You can go to next class");
+
+var result = grade < 45 ? true : false;
+console.log(result);
