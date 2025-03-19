@@ -64,3 +64,7 @@ c = a > b;
 console.log(`a > b ? ${c}`);
 c = a <= b;
 console.log(`a <= b ? ${c}`);
+a = 10;
+b = -10;
+console.log(`a == b ? ${a == b}`);
+console.log(`a === b ? ${a === b}`);
