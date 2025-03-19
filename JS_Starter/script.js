@@ -78,7 +78,7 @@ c = 9;
 console.log(`a < b || b-? ${a == b}`);
 
 //Conditional Statements: if, else, else if
-var grade = prompt("Your grade is: ");
+let grade = prompt("Your grade is: ");
 
 if (grade < 40) {
   console.log("You cannot go to the next class.");
@@ -87,3 +87,26 @@ if (grade < 40) {
 } else {
   console.log("You can go to next class");
 }
+
+age = prompt("Your age is: ");
+
+if (age < 18) {
+  console.log("You cannot enter the cafe.");
+} else if (age < 23) {
+  console.log("You can enter the cafe but you cannot buy a drink");
+} else {
+  console.log("You can enter the cafe and buy a drink");
+}
+
+//alternatively:
+// if (age < 18) {
+//   console.log("You cannot enter the cafe.");
+// }
+//
+// if (age < 18 && age < 23) {
+//   console.log("You can enter the cafe but you cannot buy a drink");
+//
+// if (age >= 23)
+// {
+//   console.log("You can enter the cafe and buy a drink");
+// }
