@@ -12,7 +12,7 @@ console.log(
 );
 0;
 
-var job;
+let job;
 console.log(job);
 
 job = "unemployed";
@@ -23,3 +23,17 @@ job = 2 * job;
 job++;
 console.log(job);
 console.log(job % 2);
+
+// this is a commented line...
+
+/*
+this is a commented section
+.
+..
+...
+....
+*/
+
+alert("This is a popup window, the content of the variable job is: " + job);
+job = prompt("the new content should be: ");
+console.log(job);
