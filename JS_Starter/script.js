@@ -37,3 +37,30 @@ this is a commented section
 alert("This is a popup window, the content of the variable job is: " + job);
 job = prompt("the new content should be: ");
 console.log(job);
+
+// Basic operators:
+let a, b, c;
+
+//Add and Dif: +, -
+a = 2;
+b = 3;
+c = a + b;
+console.log(`c = a + b = ${a} + ${b} = ${c}`);
+c++;
+console.log(`c++ = ${c}`);
+c = b - a;
+console.log(`c = a - b = ${a} - ${b} = ${c}`);
+c--;
+console.log(`c-- = ${c}`);
+
+//Multiplication and Division: *, /
+c = a * b;
+console.log(`c = a * b = ${a} * ${b} = ${c}`);
+c = a / b;
+console.log(`c = a / b = ${a} / ${b} = ${c}`);
+
+//Logical operators: >, >=, <, <=
+c = a > b;
+console.log(`a > b ? ${c}`);
+c = a <= b;
+console.log(`a <= b ? ${c}`);
