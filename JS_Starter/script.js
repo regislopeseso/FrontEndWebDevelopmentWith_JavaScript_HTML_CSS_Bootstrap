@@ -245,12 +245,23 @@ this is a commented section
 //   break;
 // }
 
-//Functions
-function sayHello() {
-  console.log("Hello world");
-  console.log("goodbye world");
+//! Functions
+//? without arguments
+// function sayHello() {
+//   console.log("Hello world");
+//   console.log("goodbye world");
+// }
+
+// sayHello();
+// sayHello();
+// sayHello();
+
+//? with arguments
+
+let userName;
+
+function sayHelloTo(userName) {
+  console.log($`Hi {userName}`);
 }
 
-sayHello();
-sayHello();
-sayHello();
+sayHelloTo("Regis");
