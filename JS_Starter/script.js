@@ -65,6 +65,14 @@ console.log(`a > b ? ${c}`);
 c = a <= b;
 console.log(`a <= b ? ${c}`);
 a = 10;
-b = -10;
+b = "10";
 console.log(`a == b ? ${a == b}`);
 console.log(`a === b ? ${a === b}`);
+
+console.log(`(a !== b)? (${a} !== ${b})? ${a !== b}`);
+console.log(`!(a !== b)? !(${a} !== ${b})? ${!(a !== b)}`);
+
+a = 1;
+b = 5;
+c = 9;
+console.log(`a < b || b-? ${a == b}`);
