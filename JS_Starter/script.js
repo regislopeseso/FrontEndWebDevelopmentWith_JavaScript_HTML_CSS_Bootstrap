@@ -188,32 +188,59 @@ this is a commented section
 
 //! Loops
 
-//? While
-let number = 1;
-while (number <= 10) {
-  console.log(number);
-  number += 2;
-}
+// //? While
+// let number = 1;
+// while (number <= 10) {
+//   console.log(number);
+//   number += 2;
+// }
 
-//? For
-for (i = 10; i > 0; i--) {
+// //* Quiz
+// let evenN = 132;
+// while (evenN <= 148) {
+//   console.log(evenN);
+//   evenN += 2;
+//   // or;
+//   // if (evenN % 2 === 0) {
+//   //   console.log(evenN);
+//   // }
+//   // evenN++;
+// }
+
+// let divBySevenN = 25;
+// while (divBySevenN <= 100) {
+//   if (divBySevenN % 7 === 0) {
+//     console.log(divBySevenN);
+//   }
+//   divBySevenN++;
+// }
+
+// //? For
+// for (let i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+
+// //* Quiz
+// for (let i = 132; i < 148; i++) {
+//   i++;
+//   console.log(i);
+// }
+
+// for (let i = 25; i < 100; i++) {
+//   i % 7 === 0 && i % 5 === 0 ? console.log(i) : null;
+// }
+
+//? Break and Continue
+console.log("continue statement");
+for (var i = 1; i <= 10; i++) {
+  if (i % 2 !== 0) continue;
   console.log(i);
 }
-//? Foreach
 
-//* Quiz
-let evenN = 132;
-while (evenN <= 148) {
-  if (evenN % 2 === 0) {
-    console.log(evenN);
+console.log("break statement");
+for (var i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
   }
-  evenN++;
-}
-
-let divBySevenN = 25;
-while (divBySevenN <= 100) {
-  if (divBySevenN % 7 == 0) {
-    console.log(divBySevenN);
-  }
-  divBySevenN++;
+  break;
 }
