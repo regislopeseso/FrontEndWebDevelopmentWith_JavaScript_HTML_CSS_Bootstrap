@@ -200,3 +200,20 @@ for (i = 10; i > 0; i--) {
   console.log(i);
 }
 //? Foreach
+
+//* Quiz
+let evenN = 132;
+while (evenN <= 148) {
+  if (evenN % 2 === 0) {
+    console.log(evenN);
+  }
+  evenN++;
+}
+
+let divBySevenN = 25;
+while (divBySevenN <= 100) {
+  if (divBySevenN % 7 == 0) {
+    console.log(divBySevenN);
+  }
+  divBySevenN++;
+}
