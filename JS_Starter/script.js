@@ -147,3 +147,41 @@ switch (day) {
     console.log("I don't know the day");
     break;
 }
+
+switch (true) {
+  case grade < 40:
+    console.log("You cannot go to the next class");
+    break;
+  case grade >= 40 && grade < 45:
+    console.log("You cannot go to the next class but you can enter the exam");
+    break;
+  case grade >= 45:
+    console.log("You can go to the next class");
+    break;
+}
+
+var aG1 = 90;
+var aG2 = 80;
+var aG3 = 95;
+var aAvg = (aG1 + aG2 + aG3) / 3;
+console.log(`'Alex avg. grade: ${aAvg}'`);
+
+var sG1 = 89;
+var sG2 = 76;
+var sG3 = 98;
+var sAvg = (sG1 + sG2 + sG3) / 3;
+console.log(`'Sarah avg. grade: ${sAvg}'`);
+
+var nG1 = 89;
+var nG2 = 76;
+var nG3 = 98;
+var nAvg = (nG1 + nG2 + nG3) / 3;
+console.log(`'Sarah avg. grade: ${nAvg}'`);
+
+if (aAvg > sAvg && aAvg > nAvg) {
+  console.log(`'Alex has the highest avg. grade: ${aAvg}'`);
+} else if (sAvg > aAvg && sAvg > nAvg) {
+  console.log(`'Sarah has the highest avg. grade: ${sAvg}'`);
+} else {
+  console.log(`'Sarah has the highest avg. grade: ${nAvg}'`);
+}
