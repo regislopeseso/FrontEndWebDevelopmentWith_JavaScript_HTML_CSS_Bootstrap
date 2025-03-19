@@ -34,8 +34,8 @@ this is a commented section
 ....
 */
 
-alert("This is a popup window, the content of the variable job is: " + job);
-job = prompt("the new content should be: ");
+//alert("This is a popup window, the content of the variable job is: " + job);
+//job = prompt("the new content should be: ");
 console.log(job);
 
 // Basic operators:
@@ -76,3 +76,14 @@ a = 1;
 b = 5;
 c = 9;
 console.log(`a < b || b-? ${a == b}`);
+
+//Conditional Statements: if, else, else if
+var grade = prompt("Your grade is: ");
+
+if (grade < 40) {
+  console.log("You cannot go to the next class.");
+} else if (grade >= 40 && grade < 45) {
+  console.log("You cannot go to the next class but you can enter the exam");
+} else {
+  console.log("You can go to next class");
+}
