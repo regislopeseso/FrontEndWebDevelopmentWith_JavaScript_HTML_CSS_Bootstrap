@@ -256,12 +256,26 @@ this is a commented section
 // sayHello();
 // sayHello();
 
-//? with arguments
+// //? with arguments
+// let userName;
 
-let userName;
+// function sayHelloTo(userName) {
+//   console.log($`Hi {userName}`);
+// }
 
-function sayHelloTo(userName) {
-  console.log($`Hi {userName}`);
+// sayHelloTo("Regis");
+
+//? return
+function cube(number) {
+  if (number > 999) {
+    return 0;
+  }
+  return number * number * number;
 }
 
-sayHelloTo("Regis");
+console.log(cube(4));
+console.log(cube(9999999999999999));
+//or
+
+let result = cube(3);
+console.log(result);
