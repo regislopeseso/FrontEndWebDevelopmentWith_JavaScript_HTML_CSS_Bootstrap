@@ -200,11 +200,11 @@ this is a commented section
 // while (evenN <= 148) {
 //   console.log(evenN);
 //   evenN += 2;
-//   // or;
-//   // if (evenN % 2 === 0) {
-//   //   console.log(evenN);
-//   // }
-//   // evenN++;
+////? or;
+// if (evenN % 2 === 0) {
+//   console.log(evenN);
+// }
+// evenN++;
 // }
 
 // let divBySevenN = 25;
@@ -275,7 +275,7 @@ this is a commented section
 
 // console.log(cube(4));
 // console.log(cube(9999999999999999));
-// //or
+////?or
 
 // let result = cube(3);
 // console.log(result);
@@ -322,9 +322,9 @@ this is a commented section
 //   console.log(Name);
 // }
 
-// // Compare
+////?Compare
 // sayName();
-// // vs
+////? vs
 // console.log(Name);
 
 // function sayHi() {
@@ -341,23 +341,105 @@ this is a commented section
 
 //! Arrays
 
-//? Example 1
-var students = ["Sheldon", "Penny", "Leonard", "Raj"];
-console.log(students[0]);
+// //? Example 1
+// var students = ["Sheldon", "Penny", "Leonard", "Raj"];
+// console.log(students[0]);
 
-students[0] = "Amy";
+// students[0] = "Amy";
 
-for (let student of students) {
-  console.log(student);
-}
+// for (let student of students) {
+//   console.log(student);
+// }
 
-//? Example 1
-let mix = new Array();
+// //? Example 2
+// let mix = new Array();
 
-let gAc = 9.8;
-let m = 92;
-mix = [1, "Regis", false, [gAc, m]];
+// let gAc = 9.8;
+// let m = 92;
+// mix = [1, "Regis", false, [gAc, m]];
 
-for (let item of mix) {
-  console.log(item);
-}
+// for (let item of mix) {
+//   console.log(item);
+// }
+
+//? Array Methods
+var people = ["Sheldon", "Penny", "Leonard", "Raj"];
+
+//? .push():
+////? Adds a new element to the END of an array:
+
+//in bad way:
+//people[4] = "Bernadette";
+
+//in good way:
+// people.push("Bernadette");
+
+// for (let person of people) {
+//   console.log(person);
+// }
+
+//? .unshift():
+////? Adds a new element to the BEGINNING of an array:
+
+// people.unshift("Bernadette"); //Adds Bernadette to the beginning of people
+
+// for (let person of people) {
+//   console.log(person);
+// }
+
+//? .pop():
+// //?Removes the element of the END of an array:
+// people.pop(); //Removes "Raj" and returns the removed item
+
+// for (let person of people) {
+//   console.log(person);
+// }
+
+//? .shift():
+////? Removes the element of BEGINNING end of an array:
+// people.shift(); // removes "Sheldon" and returns the removed item
+
+// for (let person of people) {
+//   console.log(person);
+// }
+
+//? .indexOf()
+// console.log(people.indexOf("Leonard")); // returns 2 which is the position 'Leonard' occupies in the array
+
+//? .slice()
+// this method won't change the original array
+// it will rather created a new one out of it
+// let friends = ["Ross", "Rachel", "Joey", "Chandler"];
+// let couple = friends.slice(0, 2); // removes all elements after the position 2 and including it
+// console.log(friends);
+// console.log(couple);
+
+// let allTheSame = friends.slice();
+// console.log(allTheSame);
+
+//* Array Quiz
+// let books = ["Harry Potter", "The Hobbit", "Hunger Games", "Little Prince"];
+// let films = [
+//   ["hobbit1", "hobbit2", "hobbit3"],
+//   ["matrix1", "matrix2", "matrix3"],
+//   ["godFather1", "godFather2", "godFather3"],
+// ];
+
+// console.log(films[2][2]); // returns "godFather3"
+
+//? Array interaction
+// let colors = ["blue", "red", "green"];
+
+// for (var i = 0; i < 3; i++) {
+//   console.log(colors[i]);
+// }
+
+// //? or
+// for (var color of colors) {
+//   console.log(color);
+// }
+
+// //? or
+// colors.forEach(function (color) {
+//   console.log(color);
+// });
