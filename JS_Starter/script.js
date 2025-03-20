@@ -534,21 +534,53 @@ var people = ["Sheldon", "Penny", "Leonard", "Raj"];
 // }
 
 //? Object Methods // similar to class, class methods
+// function Cube(height, width, depth) {
+//   this.height = height;
+//   this.width = width;
+//   this.depth = depth;
 
-function Cube(height, width, depth) {
-  this.height = height;
-  this.width = width;
-  this.depth = depth;
-  this.getVolume = function () {
-    console.log(this.height * this.width * this.depth);
-  };
-}
+//   this.getVolume = function () {
+//     console.log(this.height * this.width * this.depth);
+//   };
+// }
 
-let myCube = new Cube(3, 4, 5);
-myCube.getVolume();
+// let myCube = new Cube(3, 4, 5);
+// myCube.getVolume();
 
+//? Class
+// class Cylinder {
+//   constructor(height, width, depth) {
+//     this.height = height;
+//     this.width = width;
+//     this.depth = depth;
+
+//     this.getVolume = function () {
+//       console.log(this.height * this.width * this.depth);
+//     };
+//   }
+// }
+
+//! this. Keyword: always refers to the object it belongs if it's a generic function then it refers to window object which it the master object from which all objects derive
 // function addNumber(x, y) {
 //   console.log(x + y);
 //   console.log(this);
 // }
 // addNumber(10, 20);
+
+let Raj = {
+  name: "Raj",
+  year: 1989,
+  sayHi: function () {
+    console.log(this);
+
+    function someFunc() {
+      console.log(this);
+    }
+    someFunc();
+  },
+};
+
+Raj.sayHi();
+
+//sayHi is a method because it is a property of an object therefore "this" in this case refers to the object Raj
+// someFunc is just a function and not a method therefore it does refer to the window object (global object).
