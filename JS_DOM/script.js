@@ -60,29 +60,38 @@
 //! 3. Changes the content of an element
 //! 4. Changes attributes (ex.: reference of a src="...")
 
-let divToManipulate = document.querySelector(".background");
+//! let divToManipulate = document.querySelector(".background");
 
+//! STYLE MANIPULATION
 //! divToManipulate.style.height = "50px";
 //! divToManipulate.style.width = "400px";
 //! divToManipulate.style.backgroundColor = "red";
 //! divToManipulate.style.fontSize = "red";
 //! divToManipulate.style.border = "5px solid black";
 
+//! CLASS MANIPULATION
 //! divToManipulate.classList.add("addClass");
 //! divToManipulate.classList.remove("addClass");
 //! divToManipulate.classList.toggle("addClass");
 
-let paragraph = document.querySelector("#oakParagraph");
+//! let paragraph = document.querySelector("#oakParagraph");
 
+//! CONTENT MANIPULATION
 //! .textContent extracts all the content inside two html tags
 //! HOWEVER, it ignores the html elements inside (for instance if there is an <strong>this is a bold text<strong>, the bold effect will be lost).
 //! Because it returns a string.
-console.log(paragraph.textContent);
-paragraph.textContent = "OAK Academy is the best academy, really";
+//! console.log(paragraph.textContent);
+//! paragraph.textContent = "OAK Academy is the best academy, really";
 
 //! .innerHTML extracts all the content inside two html
 //! AND allows us to reproduce elements.
 //! Because it returns html.
-console.log(paragraph.innerHTML);
-paragraph.innerHTML =
-  "OAK Academy is the <strong>best</strong> academy, really is great";
+//! console.log(paragraph.innerHTML);
+//! paragraph.innerHTML =
+//! "OAK Academy is the <strong>best</strong> academy, really is great";
+
+//! ATTRIBUTES MANIPULATION
+//! let myLink = document.querySelector("a");
+//! console.log(myLink.getAttribute("href"));
+
+//! console.log(myLink.setAttribute("href", "https:/google.com/"));
