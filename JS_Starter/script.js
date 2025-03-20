@@ -327,14 +327,37 @@ this is a commented section
 // // vs
 // console.log(Name);
 
-function sayHi() {
-  let myWord = "Hi there";
-  console.log(myWord);
-  sayBye();
+// function sayHi() {
+//   let myWord = "Hi there";
+//   console.log(myWord);
+//   sayBye();
 
-  function sayBye() {
-    console.log(myWord);
-  }
+//   function sayBye() {
+//     console.log(myWord);
+//   }
+// }
+
+// sayHi();
+
+//! Arrays
+
+//? Example 1
+var students = ["Sheldon", "Penny", "Leonard", "Raj"];
+console.log(students[0]);
+
+students[0] = "Amy";
+
+for (let student of students) {
+  console.log(student);
 }
 
-sayHi();
+//? Example 1
+let mix = new Array();
+
+let gAc = 9.8;
+let m = 92;
+mix = [1, "Regis", false, [gAc, m]];
+
+for (let item of mix) {
+  console.log(item);
+}
