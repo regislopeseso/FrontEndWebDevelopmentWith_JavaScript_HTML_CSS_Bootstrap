@@ -567,20 +567,20 @@ var people = ["Sheldon", "Penny", "Leonard", "Raj"];
 // }
 // addNumber(10, 20);
 
-let Raj = {
-  name: "Raj",
-  year: 1989,
-  sayHi: function () {
-    console.log(this);
+// let Raj = {
+//   name: "Raj",
+//   year: 1989,
+//   sayHi: function () {
+//     console.log(this);
 
-    function someFunc() {
-      console.log(this);
-    }
-    someFunc();
-  },
-};
+//     function someFunc() {
+//       console.log(this);
+//     }
+//     someFunc();
+//   },
+// };
 
-Raj.sayHi();
+// Raj.sayHi();
 
 //sayHi is a method because it is a property of an object therefore "this" in this case refers to the object Raj
 // someFunc is just a function and not a method therefore it does refer to the window object (global object).
