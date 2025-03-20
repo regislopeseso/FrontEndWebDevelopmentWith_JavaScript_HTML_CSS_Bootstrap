@@ -70,4 +70,19 @@ let divToManipulate = document.querySelector(".background");
 
 //! divToManipulate.classList.add("addClass");
 //! divToManipulate.classList.remove("addClass");
-divToManipulate.classList.toggle("addClass");
+//! divToManipulate.classList.toggle("addClass");
+
+let paragraph = document.querySelector("#oakParagraph");
+
+//! .textContent extracts all the content inside two html tags
+//! HOWEVER, it ignores the html elements inside (for instance if there is an <strong>this is a bold text<strong>, the bold effect will be lost).
+//! Because it returns a string.
+console.log(paragraph.textContent);
+paragraph.textContent = "OAK Academy is the best academy, really";
+
+//! .innerHTML extracts all the content inside two html
+//! AND allows us to reproduce elements.
+//! Because it returns html.
+console.log(paragraph.innerHTML);
+paragraph.innerHTML =
+  "OAK Academy is the <strong>best</strong> academy, really is great";
