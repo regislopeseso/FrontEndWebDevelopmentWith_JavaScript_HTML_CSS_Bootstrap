@@ -490,3 +490,38 @@ var people = ["Sheldon", "Penny", "Leonard", "Raj"];
 // (person.name = "Leonard"), (person.school = "MIT"), (person.age = 32);
 
 // console.log(person);
+
+//? Complex Data Structure
+let blogPosts = [
+  {
+    title: "weather",
+    content: "it is rainy today",
+    author: [
+      {
+        name: "John",
+        lastName: "Travolta",
+      }, // this is an object
+      {
+        name: "Frodo",
+        lastName: "Bagins",
+      }, // this is an object
+    ], // this is an array inside an object
+  }, // this is an object
+  {
+    title: "weather",
+    content: "It's so good that's raining",
+    author: [
+      {
+        name: "Magnus",
+        lastName: "Carlsen",
+      }, // this is an object
+      {
+        name: "Friedrich",
+        lastName: "Wilhelm",
+      }, // this is an object
+    ], // this is an array inside an object
+  }, // this is an object
+]; // this is an array
+
+console.log(blogPosts[0].title);
+console.log(blogPosts[1].author[1].lastName);
