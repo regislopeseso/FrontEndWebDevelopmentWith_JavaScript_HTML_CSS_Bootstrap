@@ -443,3 +443,27 @@ var people = ["Sheldon", "Penny", "Leonard", "Raj"];
 // colors.forEach(function (color) {
 //   console.log(color);
 // });
+
+//! Objects
+
+// let student = new Object();
+
+// let student = {
+//   name: "Sheldon",
+//   age: 36,
+//   school: "calTech",
+// };
+
+//? accessing properties
+//? 1rst way:
+//console.log(student["name"]);
+//? 2nd way:
+//console.log(student.name);
+
+let schoolName = "school";
+let uniStudent = {
+  name: "Martin",
+  age: 19,
+  school: "Uni",
+};
+console.log(uniStudent[schoolName]); //this works because schoolName holds the 'school' it held something else like 'orange' it would not find a property belonging to the object uniStudent called 'orange' therefore it would not work.
