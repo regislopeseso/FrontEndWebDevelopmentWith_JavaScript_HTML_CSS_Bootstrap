@@ -460,10 +460,33 @@ var people = ["Sheldon", "Penny", "Leonard", "Raj"];
 //? 2nd way:
 //console.log(student.name);
 
-let schoolName = "school";
-let uniStudent = {
-  name: "Martin",
-  age: 19,
-  school: "Uni",
-};
-console.log(uniStudent[schoolName]); //this works because schoolName holds the 'school' it held something else like 'orange' it would not find a property belonging to the object uniStudent called 'orange' therefore it would not work.
+// let schoolName = "school";
+// let uniStudent = {
+//   name: "Martin",
+//   age: 19,
+//   school: "Uni",
+// };
+// console.log(uniStudent[schoolName]); //this works because schoolName holds the 'school' it held something else like 'orange' it would not find a property belonging to the object uniStudent called 'orange' therefore it would not work.
+//? 3rd way: using a constructor function:
+// function Person(name, school, age) {
+//   this.name = name;
+//   this.school = school;
+//   this.age = age;
+// }
+
+// let person1 = new Person("Leonard", "MIT", 32);
+
+// person1.name = "Howard";
+
+// console.log(person1);
+
+//? Object Update
+// let person = {
+//   name: "",
+//   school: "",
+//   age: 0,
+// };
+
+// (person.name = "Leonard"), (person.school = "MIT"), (person.age = 32);
+
+// console.log(person);
