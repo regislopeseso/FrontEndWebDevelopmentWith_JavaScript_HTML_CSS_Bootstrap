@@ -95,3 +95,15 @@
 //! console.log(myLink.getAttribute("href"));
 
 //! console.log(myLink.setAttribute("href", "https:/google.com/"));
+
+//? EVENT HANDLERS
+//? The process is: select and add ...
+//? CLASS 172. INTRODUCTION TO EVENT Handlers
+let button = document.querySelector("#btn1");
+
+let title = document.querySelector("#OAKTitle");
+
+button.addEventListener("click", function () {
+  console.log("You clicked the button");
+  title.style.backgroundColor = "red";
+}); //the function () here is called a call back function
