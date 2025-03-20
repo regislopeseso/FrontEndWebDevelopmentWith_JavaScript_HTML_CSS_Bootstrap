@@ -492,36 +492,63 @@ var people = ["Sheldon", "Penny", "Leonard", "Raj"];
 // console.log(person);
 
 //? Complex Data Structure
-let blogPosts = [
-  {
-    title: "weather",
-    content: "it is rainy today",
-    author: [
-      {
-        name: "John",
-        lastName: "Travolta",
-      }, // this is an object
-      {
-        name: "Frodo",
-        lastName: "Bagins",
-      }, // this is an object
-    ], // this is an array inside an object
-  }, // this is an object
-  {
-    title: "weather",
-    content: "It's so good that's raining",
-    author: [
-      {
-        name: "Magnus",
-        lastName: "Carlsen",
-      }, // this is an object
-      {
-        name: "Friedrich",
-        lastName: "Wilhelm",
-      }, // this is an object
-    ], // this is an array inside an object
-  }, // this is an object
-]; // this is an array
+// let blogPosts = [
+//   {
+//     title: "weather",
+//     content: "it is rainy today",
+//     likers: [
+//       {
+//         name: "John",
+//         lastName: "Travolta",
+//       }, // this is an object
+//       {
+//         name: "Frodo",
+//         lastName: "Bagins",
+//       }, // this is an object
+//     ], // this is an array inside an object
+//   }, // this is an object
+//   {
+//     title: "weather",
+//     content: "It's so good that's raining",
+//     likers: [
+//       {
+//         name: "Magnus",
+//         lastName: "Carlsen",
+//       }, // this is an object
+//       {
+//         name: "Friedrich",
+//         lastName: "Wilhelm",
+//       }, // this is an object
+//     ], // this is an array inside an object
+//   }, // this is an object
+// ]; // this is an array
 
-console.log(blogPosts[0].title);
-console.log(blogPosts[1].author[1].lastName);
+//console.log(blogPosts[0].title);
+//console.log(blogPosts[1].likers[1].lastName);
+
+// for (var post of blogPosts) {
+//   console.log(post);
+//   for (var liker of post.likers) {
+//     console.log(liker);
+//   }
+// }
+
+//? Object Methods // similar to class, class methods
+
+function Cube(height, width, depth) {
+  this.height = height;
+  this.width = width;
+  this.depth = depth;
+  this.getVolume = function () {
+    console.log(this.height * this.width * this.depth);
+  };
+}
+
+let myCube = new Cube(3, 4, 5);
+myCube.getVolume();
+
+// function addNumber(x, y) {
+//   console.log(x + y);
+//   console.log(this);
+// }
+// addNumber(10, 20);
