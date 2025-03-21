@@ -99,11 +99,27 @@
 //? EVENT HANDLERS
 //? The process is: select and add ...
 //? CLASS 172. INTRODUCTION TO EVENT Handlers
-let button = document.querySelector("#btn1");
+//? let button = document.querySelector("#btn1");
 
-let title = document.querySelector("#OAKTitle");
+//? let title = document.querySelector("#OAKTitle");
 
-button.addEventListener("click", function () {
-  console.log("You clicked the button");
-  title.style.backgroundColor = "red";
-}); //the function () here is called a call back function
+//? button.addEventListener("click", function () {
+//?   console.log("You clicked the button");
+//?   title.style.backgroundColor = "red";
+//? }); //the function () here is called a call back function
+
+//* CLASS 173. EVENT HANDLER CODEQUIZ-1
+
+//* let listParent = document.querySelector("ul");
+//* listParent.addEventListener("click", function () {
+//*   console.log("You clicked the ul");
+//*   listParent.style.backgroundColor = "blue";
+//* });
+
+//* let listItems = document.querySelectorAll("li");
+
+//* for (var i = 0; i < listItems.length; i++) {
+//*   listItems[i].addEventListener("click", function () {
+//*     this.style.color = "white";
+//*   });
+//* }
