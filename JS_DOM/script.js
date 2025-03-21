@@ -123,3 +123,17 @@
 //*     this.style.color = "white";
 //*   });
 //* }
+
+//! CLASS 175. CALLBACK FUNCTION
+//! let oakParagraph = document.querySelector("#oakParagraph");
+
+//! function toggleBackground() {
+//!   oakParagraph.classList.toggle("toggleBackground");
+//! }
+
+//! oakParagraph.addEventListener("click", toggleBackground;
+//// oakParagraph.addEventListener("click", toggleBackground());
+//! Although toggleBack is a function, here it is not written with parenthesis,
+//! and that makes it a callback function this is done so
+//! because it is not desired that the functions activates when the page is loaded
+//! but when the p tag be clicked.
