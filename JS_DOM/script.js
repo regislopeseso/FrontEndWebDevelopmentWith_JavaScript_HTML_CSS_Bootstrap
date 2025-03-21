@@ -143,13 +143,17 @@ let todoItems = document.querySelectorAll(".todoItem");
 
 for (let item of todoItems) {
   item.addEventListener("mouseover", function () {
-    item.style.backgroundColor = "blue";
-    item.style.color = "white";
+    this.classList.remove("refreshTask");
+    this.classList.add("focusTask");
   });
 
   item.addEventListener("mouseout", function () {
-    item.style.backgroundColor = "white";
-    item.style.color = "red";
-    item.innerHTML = "<s> Go to school <s>";
+    this.classList.remove("focusTask");
+    this.classList.add("finishedTask");
+  });
+
+  item.addEventListener("dblclick", function () {
+    this.classList.remove("finishedTask");
+    this.classList.add("refreshTask");
   });
 }
