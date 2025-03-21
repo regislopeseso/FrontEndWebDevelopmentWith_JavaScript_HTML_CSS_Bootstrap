@@ -137,3 +137,19 @@
 //! and that makes it a callback function this is done so
 //! because it is not desired that the functions activates when the page is loaded
 //! but when the p tag be clicked.
+
+//? 177. Todo List Quiz Solution
+let todoItems = document.querySelectorAll(".todoItem");
+
+for (let item of todoItems) {
+  item.addEventListener("mouseover", function () {
+    item.style.backgroundColor = "blue";
+    item.style.color = "white";
+  });
+
+  item.addEventListener("mouseout", function () {
+    item.style.backgroundColor = "white";
+    item.style.color = "red";
+    item.innerHTML = "<s> Go to school <s>";
+  });
+}
